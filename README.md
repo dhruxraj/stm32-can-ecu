@@ -182,3 +182,16 @@ See [docs/DESIGN_NOTES.md](docs/DESIGN_NOTES.md#5-limitations-of-rev-a).
 * UDS-style diagnostics.
 
 See [docs/DESIGN_NOTES.md](docs/DESIGN_NOTES.md#6-future-improvements).
+
+## License
+
+This project uses separate licenses for hardware, software, and documentation.
+
+- **Hardware:** CERN-OHL-P-2.0
+- **Firmware and software tools:** MIT License
+- **Documentation:** CC BY 4.0
+
+See the corresponding `LICENSE-*` files in the repository for the
+complete license terms.
+
+Third-party components retain their original licenses.
