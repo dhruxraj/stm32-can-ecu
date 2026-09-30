@@ -1,0 +1,45 @@
+STM32G4 CAN ECU
+Copyright (c) 2026 Dhruvraj Singh Shekhawat
+
+This project is released under multiple licenses according to the type of material contained in the repository.
+
+HARDWARE
+--------
+The hardware design files, including KiCad schematics, PCB layouts, symbols, footprints, and associated hardware design files, are
+licensed under:
+
+CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0)
+
+See LICENSE-HARDWARE for the complete license text.
+
+SOFTWARE
+--------
+The original firmware and software source code in this repository, including the STM32 firmware and Python tools, are licensed under:
+
+MIT License
+
+See LICENSE-SOFTWARE for the complete license text.
+
+DOCUMENTATION
+-------------
+Documentation written specifically for this project is licensed under:
+
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Unless otherwise stated, you may share and adapt the documentation provided that appropriate credit is given.
+
+THIRD-PARTY MATERIAL
+--------------------
+This repository may contain or reference third-party software, libraries, SDKs, HAL/CMSIS components, symbols, footprints, or other
+materials.
+
+Third-party materials remain subject to their respective licenses. Their inclusion in this repository does not relicense them under the
+licenses above.
+
+In particular, STMicroelectronics HAL/CMSIS components obtained through the project's driver-fetching mechanism retain the licenses
+provided by STMicroelectronics.
+
+NO WARRANTY
+-----------
+Except where required by applicable law, the project is provided without warranty. See the applicable license files for the complete
+terms and conditions.
