@@ -1,0 +1,46 @@
+Item,Qty,References,Value,Footprint (project lib),Equivalent KiCad std footprint,MPN / specification,Manufacturer,Description,Mount,Est. unit USD,Est. ext. USD
+1,1,C1,10uF 50V X7R,C_1210_3225Metric,Capacitor_SMD:C_1210_3225Metric,"generic 10uF 50V X7R, 1210",any,Input ceramic 10 uF 50 V X7R 1210,SMD,0.35,0.35
+2,1,C2,47uF 35V,CP_Radial_D6.3mm_P2.50mm,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,"47 uF 35 V aluminium electrolytic, D6.3 mm, P2.5 mm, low-ESR",any,Input bulk / damping capacitor,THT,0.20,0.20
+3,1,C3,10uF 16V X5R,C_0805_2012Metric,Capacitor_SMD:C_0805_2012Metric,"generic 10uF 16V X5R, 0805",any,5 V rail output capacitor 0805,SMD,0.08,0.08
+4,2,C4 C12,1uF 16V X7R,C_0603_1608Metric,Capacitor_SMD:C_0603_1608Metric,"generic 1uF 16V X7R, 0603",any,LDO input capacitor; VDDA bulk,SMD,0.03,0.06
+5,1,C5,10uF 10V X5R,C_0805_2012Metric,Capacitor_SMD:C_0805_2012Metric,"generic 10uF 10V X5R, 0805",any,LDO output capacitor,SMD,0.08,0.08
+6,13,C6 C7 C8 C9 C11 C13 C14 C15 C18 C19 C20 C23 C24,100nF,C_0603_1608Metric,Capacitor_SMD:C_0603_1608Metric,"generic 100nF, 0603",any,"Ceramic capacitor 100nF, 0603; IMU VDD decoupling; IMU VDDIO decoupling; NRST filter; Transceiver VCC decoupling; Transceiver VIO decoupling; User button debounce; VBAT decoupling; VDD pin 24 decoupling; VDD pin 36 decoupling; VDD pin 48 decoupling; VDDA decoupling; VREF+ decoupling",SMD,0.02,0.26
+7,1,C10,4.7uF 10V X5R,C_0805_2012Metric,Capacitor_SMD:C_0805_2012Metric,"generic 4.7uF 10V X5R, 0805",any,VDD bulk,SMD,0.06,0.06
+8,2,C16 C17,15pF C0G,C_0603_1608Metric,Capacitor_SMD:C_0603_1608Metric,"generic 15pF C0G, 0603",any,HSE load cap (for CL = 12 pF crystal),SMD,0.03,0.06
+9,1,C21,4.7uF 16V X5R,C_0805_2012Metric,Capacitor_SMD:C_0805_2012Metric,"generic 4.7uF 16V X5R, 0805",any,Transceiver VCC bulk,SMD,0.06,0.06
+10,1,C22,4.7nF 50V,C_0603_1608Metric,Capacitor_SMD:C_0603_1608Metric,"generic 4.7nF 50V, 0603",any,Split termination common-mode capacitor,SMD,0.03,0.03
+11,1,D1,SMBJ18A,D_SMB,Diode_SMD:D_SMB,SMBJ18A,Littelfuse,"600 W unidirectional TVS, VRWM 18 V, SMB",SMD,0.25,0.25
+12,1,D2,SS34,D_SMA,Diode_SMD:D_SMA,SS34,onsemi/various,"3 A 40 V Schottky, reverse-polarity protection, SMA",SMD,0.15,0.15
+13,1,D3,GREEN PWR,LED_0603_1608Metric,LED_SMD:LED_0603_1608Metric,"0603 green LED, Vf~2.0 V",any,Power indicator (5 V rail),SMD,0.05,0.05
+14,1,D4,GREEN STATUS,LED_0603_1608Metric,LED_SMD:LED_0603_1608Metric,0603 green LED,any,STATUS indicator,SMD,0.05,0.05
+15,1,D5,RED FAULT,LED_0603_1608Metric,LED_SMD:LED_0603_1608Metric,0603 red LED,any,FAULT indicator,SMD,0.05,0.05
+16,1,D6,YELLOW CAN-TX,LED_0603_1608Metric,LED_SMD:LED_0603_1608Metric,0603 yellow LED,any,CAN-TX indicator,SMD,0.05,0.05
+17,1,D7,ORANGE CAN-RX,LED_0603_1608Metric,LED_SMD:LED_0603_1608Metric,0603 orange LED,any,CAN-RX indicator,SMD,0.05,0.05
+18,1,D8,PESD1CAN,SOT-23,Package_TO_SOT_SMD:SOT-23,"PESD1CAN,215",Nexperia,"CAN bus ESD protection, SOT-23 (verify pinout: 1,2 = bus lines, 3 = GND)",SMD,0.25,0.25
+19,1,F1,PTC 0.5A/30V,Fuse_1812_4532Metric,Fuse:Fuse_1812_4532Metric,"1812 PTC, Ihold 0.5 A, Vmax >= 30 V (e.g. Bourns MF-MSMF series - select 30 V rated)",Bourns/Littelfuse,"Resettable PTC fuse, 1812",SMD,0.35,0.35
+20,1,FB1,600R@100MHz,L_0603_1608Metric,Inductor_SMD:L_0603_1608Metric,"BLM18AG601SN1D (or equiv. 0603 bead, >=200 mA)",Murata,VDDA filter bead,SMD,0.05,0.05
+21,1,J1,PWR_IN 8-18V,TerminalBlock_1x02_P5.08mm_Horizontal,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal","1729128 (MKDS 1,5/ 2-5,08) or equivalent",Phoenix Contact,"2-pos 5.08 mm PCB screw terminal, power input (1 = +VIN, 2 = GND)",THT,0.70,0.70
+22,2,J2 J3,CAN,TerminalBlock_1x03_P5.08mm_Horizontal,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal","1729131 (MKDS 1,5/ 3-5,08) or equivalent",Phoenix Contact,"CAN bus connector (1 = CANH, 2 = CANL, 3 = GND); J2/J3 are paralleled for daisy-chain",THT,1.00,2.00
+23,1,J4,SWD,PinHeader_1x06_P2.54mm_Vertical,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,1x6 2.54 mm pin header,any,"SWD: 1 VDD_TARGET, 2 SWCLK, 3 GND, 4 SWDIO, 5 NRST, 6 SWO (Nucleo CN4 order)",THT,0.25,0.25
+24,1,J5,EXPANSION,PinHeader_2x05_P2.54mm_Vertical,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical,2x5 2.54 mm pin header,any,Expansion / debug UART (USART2),THT,0.35,0.35
+25,1,JP2,CAN_TERM,PinHeader_2x02_P2.54mm_Vertical,Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical,2x2 2.54 mm header + 2 jumper shunts,any,Termination enable: fit BOTH shunts (1-3 and 2-4) on end-of-bus nodes only,THT,0.30,0.30
+26,1,R1,1k5,R_0603_1608Metric,Resistor_SMD:R_0603_1608Metric,"generic 1k5, 0603",any,"Resistor 1k5, 0603, 1%, thick film",SMD,0.01,0.01
+27,1,R2,100k 1%,R_0603_1608Metric,Resistor_SMD:R_0603_1608Metric,"generic 100k 1%, 0603",any,"VIN divider top, 1%",SMD,0.01,0.01
+28,1,R3,15k 1%,R_0603_1608Metric,Resistor_SMD:R_0603_1608Metric,"generic 15k 1%, 0603",any,"VIN divider bottom, 1%",SMD,0.01,0.01
+29,3,R4 R5 R10,10k,R_0603_1608Metric,Resistor_SMD:R_0603_1608Metric,"generic 10k, 0603",any,BOOT0 pull-down (boot from Flash); Transceiver S pull-up: SILENT until firmware enables; User button pull-up,SMD,0.01,0.03
+30,4,R6 R7 R8 R9,680R,R_0603_1608Metric,Resistor_SMD:R_0603_1608Metric,"generic 680R, 0603",any,"Resistor 680R, 0603, 1%, thick film",SMD,0.01,0.04
+31,2,R11 R12,60R4 1%,R_0805_2012Metric,Resistor_SMD:R_0805_2012Metric,"generic 60R4 1%, 0805",any,Split termination 60.4R 0805,SMD,0.04,0.08
+32,2,R13 R14,4k7,R_0603_1608Metric,Resistor_SMD:R_0603_1608Metric,"generic 4k7, 0603",any,I2C SCL pull-up; I2C SDA pull-up,SMD,0.01,0.02
+33,1,SW1,RESET,SW_PUSH_6mm,Button_Switch_THT:SW_PUSH_6mm,6x6 mm THT tactile switch,any,Reset push-button,THT,0.15,0.15
+34,1,SW2,USER,SW_PUSH_6mm,Button_Switch_THT:SW_PUSH_6mm,6x6 mm THT tactile switch,any,User push-button,THT,0.15,0.15
+35,1,U1,R-78E5.0-0.5,Converter_DCDC_RECOM_R-78E-0.5_THT,Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT,R-78E5.0-0.5,RECOM,"5 V 0.5 A non-isolated switching regulator module, 7-28 V in, SIP-3",THT,3.60,3.60
+36,1,U2,AP2112K-3.3,SOT-23-5,Package_TO_SOT_SMD:SOT-23-5,AP2112K-3.3TRG1,Diodes Inc.,"3.3 V 600 mA LDO, SOT-23-5",SMD,0.35,0.35
+37,1,U3,STM32G431CBT6,LQFP-48_7x7mm_P0.5mm,Package_QFP:LQFP-48_7x7mm_P0.5mm,STM32G431CBT6,STMicroelectronics,"Cortex-M4F 170 MHz, 128 KB Flash, 32 KB RAM, FDCAN, LQFP48",SMD,4.60,4.60
+38,1,U4,TJA1051T/3,SOIC-8_3.9x4.9mm_P1.27mm,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,"TJA1051T/3,118",NXP,"High-speed CAN (FD) transceiver with VIO, SO8. Must be the /3 (VIO) variant!",SMD,1.10,1.10
+39,1,U5,LSM6DS3TR-C,LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y,Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y,LSM6DS3TR-C,STMicroelectronics,"6-axis IMU (accel + gyro), I2C addr 0x6A",SMD,2.40,2.40
+40,1,Y1,8MHz CL12pF,Crystal_SMD_3225-4Pin_3.2x2.5mm,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,"8.000 MHz, 3225 4-pad, +-20 ppm, CL = 12 pF (ESR <= 100R)",any,HSE crystal for accurate CAN bit timing,SMD,0.40,0.40
+
+,,,,,,,,"Estimated component total per board (qty-10 pricing, ROUGH ESTIMATE - check distributor)",,,19.09
+,,JP1 JP3 JP4,Solder jumpers,,,PCB feature - no part,,,,,
+,,TP1-TP8,Test pads,,,PCB feature - no part,,,,,
+,,H1-H4,M3 mounting holes,,,PCB feature - no part,,,,,

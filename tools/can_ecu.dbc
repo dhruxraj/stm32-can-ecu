@@ -1,0 +1,269 @@
+VERSION "STM32 CAN ECU rev A protocol 1.0"
+
+NS_ :
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	BA_DEF_DEF_
+
+BS_:
+
+BU_: ECU0 ECU1 ECU2 ECU3 PC_TOOL
+
+BO_ 256 Heartbeat_N0: 8 ECU0
+ SG_ NodeId : 0|8@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ State : 8|8@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Faults : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ PeersAlive : 32|8@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ FwVersion : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 257 Accel_N0: 8 ECU0
+ SG_ AccX : 0|16@1- (1,0) [-4000|4000] "mg" Vector__XXX
+ SG_ AccY : 16|16@1- (1,0) [-4000|4000] "mg" Vector__XXX
+ SG_ AccZ : 32|16@1- (1,0) [-4000|4000] "mg" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 258 Gyro_N0: 8 ECU0
+ SG_ GyroX : 0|16@1- (0.1,0) [-500|500] "deg/s" Vector__XXX
+ SG_ GyroY : 16|16@1- (0.1,0) [-500|500] "deg/s" Vector__XXX
+ SG_ GyroZ : 32|16@1- (0.1,0) [-500|500] "deg/s" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 259 Board_N0: 8 ECU0
+ SG_ Vin : 0|16@1+ (0.001,0) [0|30] "V" Vector__XXX
+ SG_ ImuTemp : 16|16@1- (0.01,0) [-40|125] "degC" Vector__XXX
+ SG_ Uptime : 32|16@1+ (1,0) [0|65535] "s" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 260 Diag_N0: 8 ECU0
+ SG_ TEC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ REC : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ProtoFlags : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ BusOffCount : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ E2EErrors : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ResetCause : 40|8@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 272 Heartbeat_N1: 8 ECU1
+ SG_ NodeId : 0|8@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ State : 8|8@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Faults : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ PeersAlive : 32|8@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ FwVersion : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 273 Accel_N1: 8 ECU1
+ SG_ AccX : 0|16@1- (1,0) [-4000|4000] "mg" Vector__XXX
+ SG_ AccY : 16|16@1- (1,0) [-4000|4000] "mg" Vector__XXX
+ SG_ AccZ : 32|16@1- (1,0) [-4000|4000] "mg" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 274 Gyro_N1: 8 ECU1
+ SG_ GyroX : 0|16@1- (0.1,0) [-500|500] "deg/s" Vector__XXX
+ SG_ GyroY : 16|16@1- (0.1,0) [-500|500] "deg/s" Vector__XXX
+ SG_ GyroZ : 32|16@1- (0.1,0) [-500|500] "deg/s" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 275 Board_N1: 8 ECU1
+ SG_ Vin : 0|16@1+ (0.001,0) [0|30] "V" Vector__XXX
+ SG_ ImuTemp : 16|16@1- (0.01,0) [-40|125] "degC" Vector__XXX
+ SG_ Uptime : 32|16@1+ (1,0) [0|65535] "s" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 276 Diag_N1: 8 ECU1
+ SG_ TEC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ REC : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ProtoFlags : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ BusOffCount : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ E2EErrors : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ResetCause : 40|8@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 288 Heartbeat_N2: 8 ECU2
+ SG_ NodeId : 0|8@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ State : 8|8@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Faults : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ PeersAlive : 32|8@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ FwVersion : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 289 Accel_N2: 8 ECU2
+ SG_ AccX : 0|16@1- (1,0) [-4000|4000] "mg" Vector__XXX
+ SG_ AccY : 16|16@1- (1,0) [-4000|4000] "mg" Vector__XXX
+ SG_ AccZ : 32|16@1- (1,0) [-4000|4000] "mg" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 290 Gyro_N2: 8 ECU2
+ SG_ GyroX : 0|16@1- (0.1,0) [-500|500] "deg/s" Vector__XXX
+ SG_ GyroY : 16|16@1- (0.1,0) [-500|500] "deg/s" Vector__XXX
+ SG_ GyroZ : 32|16@1- (0.1,0) [-500|500] "deg/s" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 291 Board_N2: 8 ECU2
+ SG_ Vin : 0|16@1+ (0.001,0) [0|30] "V" Vector__XXX
+ SG_ ImuTemp : 16|16@1- (0.01,0) [-40|125] "degC" Vector__XXX
+ SG_ Uptime : 32|16@1+ (1,0) [0|65535] "s" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 292 Diag_N2: 8 ECU2
+ SG_ TEC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ REC : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ProtoFlags : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ BusOffCount : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ E2EErrors : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ResetCause : 40|8@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 304 Heartbeat_N3: 8 ECU3
+ SG_ NodeId : 0|8@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ State : 8|8@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Faults : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ PeersAlive : 32|8@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ FwVersion : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 305 Accel_N3: 8 ECU3
+ SG_ AccX : 0|16@1- (1,0) [-4000|4000] "mg" Vector__XXX
+ SG_ AccY : 16|16@1- (1,0) [-4000|4000] "mg" Vector__XXX
+ SG_ AccZ : 32|16@1- (1,0) [-4000|4000] "mg" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 306 Gyro_N3: 8 ECU3
+ SG_ GyroX : 0|16@1- (0.1,0) [-500|500] "deg/s" Vector__XXX
+ SG_ GyroY : 16|16@1- (0.1,0) [-500|500] "deg/s" Vector__XXX
+ SG_ GyroZ : 32|16@1- (0.1,0) [-500|500] "deg/s" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 307 Board_N3: 8 ECU3
+ SG_ Vin : 0|16@1+ (0.001,0) [0|30] "V" Vector__XXX
+ SG_ ImuTemp : 16|16@1- (0.01,0) [-40|125] "degC" Vector__XXX
+ SG_ Uptime : 32|16@1+ (1,0) [0|65535] "s" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 308 Diag_N3: 8 ECU3
+ SG_ TEC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ REC : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ProtoFlags : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ BusOffCount : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ E2EErrors : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ResetCause : 40|8@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 240 Cmd_N0: 8 PC_TOOL
+ SG_ Command : 0|8@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ SourceNode : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Arg : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 241 Cmd_N1: 8 PC_TOOL
+ SG_ Command : 0|8@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ SourceNode : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Arg : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 242 Cmd_N2: 8 PC_TOOL
+ SG_ Command : 0|8@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ SourceNode : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Arg : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 243 Cmd_N3: 8 PC_TOOL
+ SG_ Command : 0|8@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ SourceNode : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Arg : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 255 Cmd_All: 8 PC_TOOL
+ SG_ Command : 0|8@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ SourceNode : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Arg : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Counter : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CRC : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+CM_ "Byte 6: Counter (bits 0-3) + Status nibble (bits 4-7). Byte 7: CRC-8 SAE J1850 (poly 0x1D, init 0xFF, xorout 0xFF) over [ID low byte, ID high byte, byte 0..6]. E2E-inspired, not AUTOSAR compliant.";
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+BA_ "GenMsgCycleTime" BO_ 256 100;
+BA_ "GenMsgCycleTime" BO_ 257 20;
+BA_ "GenMsgCycleTime" BO_ 258 20;
+BA_ "GenMsgCycleTime" BO_ 259 100;
+BA_ "GenMsgCycleTime" BO_ 260 1000;
+BA_ "GenMsgCycleTime" BO_ 272 100;
+BA_ "GenMsgCycleTime" BO_ 273 20;
+BA_ "GenMsgCycleTime" BO_ 274 20;
+BA_ "GenMsgCycleTime" BO_ 275 100;
+BA_ "GenMsgCycleTime" BO_ 276 1000;
+BA_ "GenMsgCycleTime" BO_ 288 100;
+BA_ "GenMsgCycleTime" BO_ 289 20;
+BA_ "GenMsgCycleTime" BO_ 290 20;
+BA_ "GenMsgCycleTime" BO_ 291 100;
+BA_ "GenMsgCycleTime" BO_ 292 1000;
+BA_ "GenMsgCycleTime" BO_ 304 100;
+BA_ "GenMsgCycleTime" BO_ 305 20;
+BA_ "GenMsgCycleTime" BO_ 306 20;
+BA_ "GenMsgCycleTime" BO_ 307 100;
+BA_ "GenMsgCycleTime" BO_ 308 1000;
+VAL_ 256 State 0 "INIT" 1 "RUN" 2 "DEGRADED" 3 "FAULT" ;
+VAL_ 260 ResetCause 0 "UNKNOWN" 1 "POWER_ON" 2 "PIN" 3 "SOFTWARE" 4 "IWDG" 5 "WWDG" 6 "LOW_POWER" 7 "OPTION_BYTE" ;
+VAL_ 272 State 0 "INIT" 1 "RUN" 2 "DEGRADED" 3 "FAULT" ;
+VAL_ 276 ResetCause 0 "UNKNOWN" 1 "POWER_ON" 2 "PIN" 3 "SOFTWARE" 4 "IWDG" 5 "WWDG" 6 "LOW_POWER" 7 "OPTION_BYTE" ;
+VAL_ 288 State 0 "INIT" 1 "RUN" 2 "DEGRADED" 3 "FAULT" ;
+VAL_ 292 ResetCause 0 "UNKNOWN" 1 "POWER_ON" 2 "PIN" 3 "SOFTWARE" 4 "IWDG" 5 "WWDG" 6 "LOW_POWER" 7 "OPTION_BYTE" ;
+VAL_ 304 State 0 "INIT" 1 "RUN" 2 "DEGRADED" 3 "FAULT" ;
+VAL_ 308 ResetCause 0 "UNKNOWN" 1 "POWER_ON" 2 "PIN" 3 "SOFTWARE" 4 "IWDG" 5 "WWDG" 6 "LOW_POWER" 7 "OPTION_BYTE" ;
+VAL_ 240 Command 0 "NONE" 1 "IDENTIFY" 2 "CLEAR_FAULTS" ;
+VAL_ 241 Command 0 "NONE" 1 "IDENTIFY" 2 "CLEAR_FAULTS" ;
+VAL_ 242 Command 0 "NONE" 1 "IDENTIFY" 2 "CLEAR_FAULTS" ;
+VAL_ 243 Command 0 "NONE" 1 "IDENTIFY" 2 "CLEAR_FAULTS" ;
+VAL_ 255 Command 0 "NONE" 1 "IDENTIFY" 2 "CLEAR_FAULTS" ;
